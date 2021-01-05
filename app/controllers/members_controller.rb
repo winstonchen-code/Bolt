@@ -11,7 +11,7 @@ class MembersController < ApplicationController
         if @member.valid?
            @member.save
            session[:id] = @member.id 
-           redirect_to user_path(@member)
+           redirect_to member_path(@member)
         else
            flash[:errors] = @member.errors.full_messages
            redirect_to new_user_path
