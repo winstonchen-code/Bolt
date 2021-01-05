@@ -10,15 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_05_191004) do
-
-  create_table "class_sessions", force: :cascade do |t|
-    t.integer "class_id"
-  end
+ActiveRecord::Schema.define(version: 2021_01_05_220235) do
 
   create_table "enrollments", force: :cascade do |t|
     t.integer "member_id"
-    t.integer "class_session_id"
+    t.integer "run_class_id"
   end
 
   create_table "favorite_classes", force: :cascade do |t|
