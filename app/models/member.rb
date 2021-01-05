@@ -9,5 +9,6 @@ class Member < ApplicationRecord
     has_many :enrollments 
     has_many :favorite_classes
     has_many :run_classes, through: :favorite_classes 
+    has_many :run_classes, through: :enrollments 
 
 end

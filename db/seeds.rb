@@ -60,7 +60,7 @@ GymClass.create(gym_id: gym1.id, run_class_id: runclass8.id)
 GymClass.create(gym_id: gym1.id, run_class_id: runclass9.id)
 
 FavoriteClass.create(member_id: member1.id, run_class_id: runclass1.id)
-FavoriteClass.create(member_id: member2.id, run_class_id: runclass2.id)
+FavoriteClass.create(member_id: member1.id, run_class_id: runclass2.id)
 FavoriteClass.create(member_id: member3.id, run_class_id: runclass3.id)
 FavoriteClass.create(member_id: member4.id, run_class_id: runclass4.id)
 FavoriteClass.create(member_id: member5.id, run_class_id: runclass5.id)
@@ -69,6 +69,8 @@ FavoriteClass.create(member_id: member7.id, run_class_id: runclass7.id)
 FavoriteClass.create(member_id: member8.id, run_class_id: runclass8.id)
 FavoriteClass.create(member_id: member9.id, run_class_id: runclass9.id)
 FavoriteClass.create(member_id: member10.id, run_class_id: runclass10.id)
+
+Enrollment.create(member_id: member1.id, run_class_id: runclass1.id)
 
 puts "seed ran"
 
