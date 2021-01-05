@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_05_035304) do
+ActiveRecord::Schema.define(version: 2021_01_05_191004) do
 
   create_table "class_sessions", force: :cascade do |t|
     t.integer "class_id"
@@ -35,20 +35,24 @@ ActiveRecord::Schema.define(version: 2021_01_05_035304) do
     t.string "location"
     t.string "email"
     t.string "phone"
+    t.boolean "indoor_or_outdoor"
+    t.string "hours_open"
   end
 
   create_table "members", force: :cascade do |t|
     t.string "name"
     t.string "age"
+    t.string "level"
     t.string "email"
     t.string "password_digest"
   end
 
   create_table "run_classes", force: :cascade do |t|
+    t.string "level"
     t.string "instructor"
-    t.string "time"
-    t.string "location"
-    t.string "duration"
+    t.datetime "start_date"
+    t.integer "duration"
+    t.integer "location"
   end
 
 end
