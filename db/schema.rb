@@ -10,17 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_04_205435) do
+ActiveRecord::Schema.define(version: 2021_01_05_035304) do
 
   create_table "class_sessions", force: :cascade do |t|
     t.integer "class_id"
-  end
-
-  create_table "classes", force: :cascade do |t|
-    t.string "instructor"
-    t.string "time"
-    t.string "location"
-    t.string "duration"
   end
 
   create_table "enrollments", force: :cascade do |t|
@@ -30,12 +23,12 @@ ActiveRecord::Schema.define(version: 2021_01_04_205435) do
 
   create_table "favorite_classes", force: :cascade do |t|
     t.integer "member_id"
-    t.integer "class_id"
+    t.integer "run_class_id"
   end
 
   create_table "gym_classes", force: :cascade do |t|
     t.integer "gym_id"
-    t.integer "class_id"
+    t.integer "run_class_id"
   end
 
   create_table "gyms", force: :cascade do |t|
@@ -49,6 +42,13 @@ ActiveRecord::Schema.define(version: 2021_01_04_205435) do
     t.string "age"
     t.string "email"
     t.string "password_digest"
+  end
+
+  create_table "run_classes", force: :cascade do |t|
+    t.string "instructor"
+    t.string "time"
+    t.string "location"
+    t.string "duration"
   end
 
 end
