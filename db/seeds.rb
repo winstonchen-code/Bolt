@@ -72,5 +72,3 @@ FavoriteClass.create(member_id: member10.id, run_class_id: runclass10.id)
 
 puts "seed ran"
 
-
-

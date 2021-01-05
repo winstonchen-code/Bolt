@@ -1,0 +1,8 @@
+<h1>  BOLT LOCATIONS </h1>
+
+<hr>
+<br>
+
+<% @gyms.each do |gym| %>
+    <li> <%= link_to gym.location, gym_path(gym) %> </li>
+<%end%>
