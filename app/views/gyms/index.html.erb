@@ -11,6 +11,15 @@
 
 <h1> All the <%= @gym_type %> Gyms </h1>
 
+<ul>
+    <% @gyms.each do |gym| %>
+        <li> 
+        <%= link_to gym.display_name, gym_path(gym) %>
+        </li> 
+    <% end %>
+
+</ul>
+
 <form action= <%=gyms_path%> method="GET">
     <div>
         <input type="radio" name="indoor_or_outdoor" value="true" <%= @gym_type == "Indoor" ? "checked" : nil %>>
@@ -28,15 +37,6 @@
         <input type="submit">
     </div>
 </form>
-
-<ul>
-    <% @gyms.each do |gym| %>
-        <li> 
-        <%= link_to gym.display_name, gym_path(gym) %>
-        </li> 
-    <% end %>
-
-</ul>
 
 </section>
 </div>
