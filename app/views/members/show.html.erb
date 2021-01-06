@@ -10,32 +10,36 @@
     <hr/>
     <h3> Runner Profile </h3>
 
+    <%= link_to "Edit your Profile", edit_member_path %> 
+
+
     <h3> Age: <%= @member.age %> </h3>
 
     <%= "Favorite Classes" %>
     <ul>
     <% @member.favorite_classes.each do | fc | %>
     <li>
-    <%= fc.run_class.level %> with  
-    <%= fc.run_class.instructor %>  
+    <%= fc.run_class.name %>
+    - <%= fc.run_class.level %>  
     </li>
     <% end %>
     </ul>
+
+    <%= link_to "Add favorite classes", enrollments_path %> 
 
     <%= "Current Schedule" %>
     <ul>
     <% @member.enrollments.each do | e | %>
-    <li>
-    <%= e.run_class.level %> with  
-    <%= e.run_class.instructor %>
-    in Studio <%= e.run_class.location %> 
-    for <%= e.run_class.duration %> minutes 
-    on <%= e.run_class.start_date %>    
+    <li>  
+    <%= e.run_session.instructor %>
+    in Studio <%= e.run_session.location %> 
+    for <%= e.run_session.duration %> minutes 
+    on <%= e.run_session.start_date %>    
     </li>
     <% end %>
     </ul>
 
-    <%= "Sign up for more classes here" %>
+    <%= link_to "Sign up for more classes", enrollments_path %> 
 
 
 
