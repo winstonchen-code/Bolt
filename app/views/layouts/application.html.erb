@@ -10,6 +10,50 @@
   </head>
 
   <body>
+    <header id="main-header">
+      <div class="container">
+        <h1>Bolt</h1>
+      </div>
+    </header>
+
+    <nav id="navbar">
+      <div class="container">
+        <ul>
+          <li>
+          <%= link_to "Home", homepage_path %>
+          </li>
+          <li>
+          <%= link_to "Membership", login_path %>
+          </li>
+          <li>
+          <%= link_to "Gyms Near Me", gyms_path %>
+          </li>
+          <li>
+          <%= link_to "Classes", run_classes_path %>
+          </li>
+          <li>
+          <%= link_to "Training", login_path %>
+          </li>
+          <li>
+          <%= link_to "Virtual", login_path %>
+          </li>
+          <li>
+          <%= link_to "Login", login_path %>
+          </li>
+          <li>
+            <%= link_to "Join Now", new_member_path %>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+
+
     <%= yield %>
+
+    <footer id="main-footer">
+      <p class=text-muted">&copy; 2021 Bolt Coportation. All rights reserved. Bolt Copyright Policy<p>
+    </footer>
+    </div>
   </body>
 </html>

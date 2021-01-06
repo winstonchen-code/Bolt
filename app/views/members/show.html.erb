@@ -1,37 +1,48 @@
-<h1> Welcome <%= @member.name %> </h1>
-<hr/>
-<h3> Runner Profile </h3>
+<section id="showcase">
+    <div class="container">
+    <h1> Welcome <%= @member.name %> </h1>
+    </div>
+</section>
 
-<h3> Age: <%= @member.age %> </h3>
+<div class="container">
+<section id="main">
 
-<%= "Favorite Classes" %>
-<ul>
-<% @member.favorite_classes.each do | fc | %>
-<li>
-<%= fc.run_class.level %> with  
-<%= fc.run_class.instructor %>  
-</li>
-<% end %>
-</ul>
+    <hr/>
+    <h3> Runner Profile </h3>
 
-<%= "Current Schedule" %>
-<ul>
-<% @member.enrollments.each do | e | %>
-<li>
-<%= e.run_class.level %> with  
-<%= e.run_class.instructor %>
-in Studio <%= e.run_class.location %> 
-for <%= e.run_class.duration %> minutes 
-on <%= e.run_class.start_date %>    
-</li>
-<% end %>
-</ul>
+    <h3> Age: <%= @member.age %> </h3>
 
-<%= "Sign up for more classes here" %>
+    <%= "Favorite Classes" %>
+    <ul>
+    <% @member.favorite_classes.each do | fc | %>
+    <li>
+    <%= fc.run_class.level %> with  
+    <%= fc.run_class.instructor %>  
+    </li>
+    <% end %>
+    </ul>
+
+    <%= "Current Schedule" %>
+    <ul>
+    <% @member.enrollments.each do | e | %>
+    <li>
+    <%= e.run_class.level %> with  
+    <%= e.run_class.instructor %>
+    in Studio <%= e.run_class.location %> 
+    for <%= e.run_class.duration %> minutes 
+    on <%= e.run_class.start_date %>    
+    </li>
+    <% end %>
+    </ul>
+
+    <%= "Sign up for more classes here" %>
 
 
 
-<br>
-<br>
-<br>
-<%= button_to "Log Out", logout_path, method: :delete %>
+    <br>
+    <br>
+    <br>
+    <%= button_to "Log Out", logout_path, method: :delete %>
+
+</section>
+</div>
