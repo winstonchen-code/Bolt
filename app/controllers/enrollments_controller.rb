@@ -6,15 +6,8 @@ class EnrollmentsController < ApplicationController
     end
      
     def create
-        @enrollment = Enrollment.new(enrollment_params)
-        if @enrollment.valid?
-           @enrollment.save
-           session[:id] = @enrollment.id 
-           redirect_to enrollment_path(@enrollment)
-        else
-           flash[:errors] = @enrollment.errors.full_messages
-           redirect_to new_user_path
-        end
+        @enrollment = Enrollment.create(enrollment_params)
+        redirect_to member_path(@enrollment.member)
     end
     def show
         @enrollment = Enrollment.find(params[:id])

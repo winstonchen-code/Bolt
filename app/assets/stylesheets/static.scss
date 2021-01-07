@@ -2,6 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-#body { 
-    background-image: image-url('Bolt2.jpg');
-  }
+.background1{ 
+  background-image: image-url('Bolt2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:100%; 
+  height: 100%; 
+  margin: auto; 
+  background-attachment: fixed; 
+  overflow:hidden; 
+  height: 800px; 
+  text-align: center; 
+  color:yellow;
+  text-transform: uppercase;
+  padding-top: 225px;
+  font-size: 50px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(80, 118, 255);
+
+}

@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy', as: 'logout'
 
-  get "/homepage", to: "static#homepage"
+  get "/home", to: "static#home"
+  get "/membership", to: "static#membership"
+  get "/virtual", to: "static#virtual"
+  get "/training", to: "static#training"
   
 end
