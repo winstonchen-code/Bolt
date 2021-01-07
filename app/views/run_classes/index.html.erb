@@ -4,5 +4,5 @@
 <br>
 
 <% @run_classes.each do |run_class| %>
-    <li> <%= link_to run_class.level, run_class_path(run_class) %> </li>
+    <li> <%= link_to run_class.name, run_class_path(run_class) %> </li>
 <%end%>

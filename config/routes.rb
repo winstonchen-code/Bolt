@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :gyms 
   resources :run_classes
   resources :enrollments
+  resources :run_sessions
 
   get '/login', to: 'sessions#new', as: 'login'
   post '/login', to: 'sessions#create'
