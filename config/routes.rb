@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :run_classes
   resources :enrollments
   resources :run_sessions
+  resources :favorite_classes
 
   get '/login', to: 'sessions#new', as: 'login'
   post '/login', to: 'sessions#create'

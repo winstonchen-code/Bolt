@@ -15,7 +15,7 @@
 
     <h3> Age: <%= @member.age %> </h3>
 
-    <%= "Favorite Classes" %>
+    <h4> <%= "Favorite Classes" %> </h4>
     <ul>
     <% @member.favorite_classes.each do | fc | %>
     <li>
@@ -25,9 +25,12 @@
     <% end %>
     </ul>
 
-    <%= link_to "Add favorite classes", enrollments_path %> 
-
-    <%= "Current Schedule" %>
+    <%= link_to "Add favorite classes", new_favorite_class_path %> 
+    
+    <br>
+    <br>
+    
+    <h4> <%= "Your Upcoming Classes" %> </h4>
     <ul>
     <% @member.enrollments.each do | e | %>
     <li>  
@@ -47,6 +50,8 @@
     <br>
     <br>
     <%= button_to "Log Out", logout_path, method: :delete %>
+
+    <%= button_to "Delete Membership", @member, data: {confirm: "Are you sure?"}, :method => :delete %> 
 
 </section>
 </div>
