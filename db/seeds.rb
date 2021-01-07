@@ -95,5 +95,4 @@ Enrollment.create(member_id: member10.id, run_session_id: runsession10.id)
 Enrollment.create(member_id: member10.id, run_session_id: runsession10.id)
 Enrollment.create(member_id: member10.id, run_session_id: runsession10.id)
 Enrollment.create(member_id: member10.id, run_session_id: runsession10.id)
-
 puts "seed ran"
