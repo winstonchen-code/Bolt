@@ -7,7 +7,7 @@
 <br>
 
 <% @run_sessions.each do |run_session| %>
-    <li> <%= link_to run_session.instructor, run_session_path(run_session) %> </li>
+    <li> <%= link_to run_session.name, run_session_path(run_session) %> </li>
 <%end%>
 
 </section>

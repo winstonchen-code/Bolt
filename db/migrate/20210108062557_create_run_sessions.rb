@@ -1,8 +1,9 @@
 class CreateRunSessions < ActiveRecord::Migration[6.0]
   def change
     create_table :run_sessions do |t|
+      t.string :name
       t.string :instructor
-      t.string :start_date
+      t.date :start_date
       t.integer :duration
       t.integer :location
       t.integer :capacity
