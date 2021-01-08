@@ -1,13 +1,13 @@
 <section id="showcase">
 <div class="container">
 
-<h1>             CHOOSE YOUR BOLT COACH             </h1>
+<h1>             BROWSE OUR CLASSES           </h1>
 
 <hr>
 <br>
 
 <% @run_sessions.each do |run_session| %>
-    <li> <%= link_to run_session.instructor, run_session_path(run_session) %> </li>
+    <li> <%= link_to run_session.name, run_session_path(run_session) %> </li>
 <%end%>
 
 </section>

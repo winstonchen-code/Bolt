@@ -14,7 +14,7 @@
     Classes: 
 
     <% @run_class.run_sessions.each do | rs | %>
-        <li> <%= link_to rs.start_date, run_session_path(rs) %> </li>
+        <li> <%= link_to rs.name, run_session_path(rs) %> </li>
     <%end%>
 
 </section>

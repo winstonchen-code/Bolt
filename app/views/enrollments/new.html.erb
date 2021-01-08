@@ -10,7 +10,7 @@
 
         <%= form_for @enrollment do | f | %>
         <%= f.hidden_field :member_id, value: session[:id] %>
-        Class: <%= f.collection_select :run_session_id, RunSession.all, :id, :start_date %>
+        Class: <%= f.collection_select :run_session_id, RunSession.all, :id, :name %>
         <%= f.submit "Join Class" %>
         <% end %>
         
