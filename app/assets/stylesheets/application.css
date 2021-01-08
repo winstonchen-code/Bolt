@@ -15,9 +15,9 @@
  */
 
  body{
-     background-color:#f4f4f4;
-     color:#555;
-     font-family:Arial,Helvetica, sans-serif;
+     background-color:#ffffff;
+     color:rgb(0, 0, 0);
+     font-family:Arial, arial black, sans-serif;
      font-size:16px;
      line-height:1.6em;
      margin:0;
@@ -30,12 +30,12 @@
  }
 
  #main-header{
-     background-color:rgb(80, 118, 255);
+     background-color:rgb(0, 0, 0);
      color:rgb(246, 254, 0);
  }
 
  #navbar{
-     background-color:#333;
+     background-color:rgb(20, 20, 20);
      color:#fff;
  }
 
