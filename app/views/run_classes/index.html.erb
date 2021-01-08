@@ -1,8 +1,19 @@
+<<<<<<< HEAD
 <h1 style="color:black; font-size:30px;">Discover Your Bolt</h1>
+=======
+<section id="showcase">
+<div class="container">
+        <h1>             DISCOVER YOUR BOLT             </h1>
+>>>>>>> d5bc78334727184ac09549bcb2388344d31e6d48
 
-<hr>
+        <hr>
+        <br>
+
+        <% @run_classes.each do |run_class| %>
+            <li> <%= link_to run_class.name, run_class_path(run_class) %> </li>
+        <%end%>
+
+</section>
+</div>
+
 <br>
-
-<% @run_classes.each do |run_class| %>
-    <li> <%= link_to run_class.name, run_class_path(run_class) %> </li>
-<%end%>

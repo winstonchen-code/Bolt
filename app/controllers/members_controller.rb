@@ -30,6 +30,13 @@ class MembersController < ApplicationController
         @member.update(member_params)
         redirect_to member_path(@member)
     end
+
+    def destroy
+        @member = Member.find(params[:id])
+        @member.destroy
+        redirect_to login_path, :notice => "Your membership has been deleted" 
+    end
+
     
     def member_params
         params.require(:member).permit(:name, :age, :email, :password, :password_confirmation)
