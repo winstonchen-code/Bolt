@@ -22,6 +22,12 @@ class FavoriteClassesController < ApplicationController
         @favorite_class.update(favorite_class_params)
         redirect_to favorite_class_path(@favorite_class)
     end
+
+    def destroy
+        @favorite_class = FavoriteClass.find_by(id: params[:id])
+        @favorite_class.destroy
+        redirect_to member_path(@favorite_class.member)
+    end
     
     def favorite_class_params
         params.require(:favorite_class).permit(:member_id, :run_class_id)

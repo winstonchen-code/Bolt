@@ -19,8 +19,11 @@
     <ul>
     <% @member.favorite_classes.each do | fc | %>
     <li>
-    <%= fc.run_class.name %>
-    - <%= fc.run_class.level %>  
+            <%= fc.run_class.name %>
+            - <%= fc.run_class.level %>  
+                <%= form_for fc, method: :delete do | f | %>
+                <%= f.submit "Remove" %>
+                <% end %>  
     </li>
     <% end %>
     </ul>
@@ -37,7 +40,12 @@
     <%= e.run_session.instructor %>
     in Studio <%= e.run_session.location %> 
     for <%= e.run_session.duration %> minutes 
-    on <%= e.run_session.start_date %>    
+    on <%= e.run_session.start_date %> 
+
+        <%= form_for e, method: :delete do | f | %>
+            <%= f.submit "Remove" %>
+            <% end %> 
+
     </li>
     <% end %>
     </ul>
