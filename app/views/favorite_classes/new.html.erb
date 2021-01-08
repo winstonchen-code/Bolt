@@ -1,0 +1,16 @@
+<section id="showcase">
+    <div class="container">
+    
+
+    <h1> Select a Class </h1>
+
+        <%= form_for @favorite_class do | f | %>
+        <%= f.hidden_field :member_id, value: session[:id] %>
+        Class: <%= f.collection_select :run_class_id, RunClass.all, :id, :name %>
+        <%= f.submit "Add Favorite Class" %>
+        <% end %>
+        
+    </div>
+</section>
+
+<br>

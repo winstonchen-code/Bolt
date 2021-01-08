@@ -22,6 +22,12 @@ class EnrollmentsController < ApplicationController
         @enrollment.update(enrollment_params)
         redirect_to enrollment_path(@enrollment)
     end
+
+    def destroy
+        @enrollment = Enrollment.find_by(id: params[:id])
+        @enrollment.destroy
+        redirect_to member_path(@enrollment.member)
+    end
     
     def enrollment_params
         params.require(:enrollment).permit(:member_id, :run_session_id)

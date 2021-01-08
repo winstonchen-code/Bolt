@@ -1,10 +1,23 @@
-<h1> BOLT CLASSES </h1>
-<hr>
-<br>
+<section id="showcase">
+<div class="container">
 
-Level: <%= @run_class.level %>
-<br>
-<br>
-Instructor: <%= @run_class.description %>
-<br>
+    <h1> BOLT CLASSES </h1>
+    <hr>
+    <br>
+
+    Level: <%= @run_class.level %>
+    <br>
+    <br>
+    Instructor: <%= @run_class.description %>
+    <br>
+    <br>
+    Classes: 
+
+    <% @run_class.run_sessions.each do | rs | %>
+        <li> <%= link_to rs.start_date, run_session_path(rs) %> </li>
+    <%end%>
+
+</section>
+</div>
+
 <br>
