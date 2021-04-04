@@ -4,7 +4,7 @@
 
 ## INSPIRATION
 
-As a result of the Covid-19 pandemic, gyms across the world were shut down. Without access to equipment and in person classes, most people were not getting enough exercise while under quarantine. It's hard to stay motivated when you're training alone. More often than not people tell themselves that they're going to workout and then don’t actually do so, instead opting for a nap or a snack instead. With that, their activity level spirals download and their depression and anxiety increases. This was common at the peak of covid-19. Because of this, I was inspired to create Bolt, an online running platform that includes online programs, many with live workout classes you can join on Zoom. This allows people to participate in classes whenever and whereever! 
+As a result of the Covid-19 pandemic, gyms across the world were shut down. Without access to equipment and in person classes, most people were not getting enough exercise while under quarantine. It's hard to stay motivated when you're training alone. More often than not people tell themselves that they're going to workout and then don’t actually do so, instead opting for a nap or a snack instead. With that, their activity level spirals download and their depression and anxiety increases. This was common at the peak of Covid-19. Because of this, I was inspired to create Bolt, an online running platform that includes online programs, many with live workout classes you can join on Zoom. This allows people to participate in classes whenever and whereever! 
 
 ## WHAT IT DOES
 
