@@ -16,3 +16,4 @@ We plan to build out more features of our application including filters, search 
 
 ### Built by 
 * [Winston Chen](https://www.linkedin.com/in/winston-c/)
+* Oumaima Azzat
