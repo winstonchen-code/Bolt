@@ -2,25 +2,15 @@
 
 ## INSPIRATION
 
-We live in a world where human impact is a constant threat to our environment and biodiversity. We see these things being widely ignored across the globe, and this is creating unforeseen impacts on entire ecosystems. However, we don’t have to accept a fate of gloom and doom for the planet. As individuals that are passionate for the environment and have a desire to make a difference, we are taking matters into our own hands by leading the charge in improving the environment through our application, Planet Warrior.
+As a result of the covid-19 pandemic, gyms across the world were shut down. Without access to equipment and in person classes, most people were not getting enough exercise while under quarantine. It's hard to stay motivated when you're training alone. More often than not people tell themselves that they're going to workout and then don’t actually do so, instead opting for a nap or a snack instead. With that, their activity level spirals download and their depression and anxiety increases. This was common at the peak of covid-19. Because of this, I was inspired to create Bolt, an online running platform that includes online programs, many with live workout classes you can join on Zoom. This allows people to participate in classes whenever and whereever! 
 
 ## WHAT IT DOES
 
-Planet Warrior is a platform that uses creativity to inspire people of all ages to help clean up the planet. Anyone can create an account and start discovering tasks/projects in their immediate area that could benefit the environment, whether picking up trash or planting trees. For each task that is completed, the user receives points that will go towards unlocking badges and leveling up their status with the ultimate goal of gaining the status of Captain Planet. Individuals who achieve this status are recognized for their tremendous impact in saving the planet from pollution.
+Bolt is an online platform that allows people of all ages to sign up for running lessons. Anyone can create an account and start discovering classes that are at their skill level, whether beginner or advance. You can filter by city to meet runners in your area. This allows a community to build and grow over time.
 
 ## WHAT'S NEXT
 
-We plan to build out more features of our application including filters, search bars, progress bars, etc. and ultimately deploy the application to the Web. After doing so, we want to promote our platform to users interested in volunteering, so that we have an active volunteer base that is making a difference in neighborhoods around the world. Lastly, we will pitch our idea to leadership groups/sponsors so that we can expand our network and create a bigger impact.
-
-## PREVIEW
-
-
-![](preview.png)
-
-
-
-[DEMO](https://planetwarriors.netlify.app/)
-
+We plan to build out more features of our application including filters, search bars, progress bars, etc. and ultimately deploy the application to the Web. After doing so, we want to promote our platform to gyms across the area, so that we can grow our user base. Lastly, we will pitch our idea to leadership groups/sponsors so that we can expand our network and inspire more people to get off their couch and start running.
 
 ### Built by 
 * [Winston Chen](https://www.linkedin.com/in/winston-c/)
