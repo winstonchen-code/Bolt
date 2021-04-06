@@ -33,6 +33,7 @@ member9 = Member.create(name: "Desi", age: "21", level: "beginner", email: "desi
 member10 = Member.create(name: "Zara", age: "29", level: "intermediate", email: "zara@gmail.com", password: "zara")
 member11 = Member.create(name: "Julian", age: "32", level: "intermediate", email: "julian@gmail.com", password: "julian")
 member12 = Member.create(name: "Rose", age: "38", level: "beginner", email: "rose@gmail.com", password: "rose")
+member12 = Member.create(name: "Justin", age: "31", level: "beginner", email: "Justin@gmail.com", password: "justin")
 
 runclass1 = RunClass.create(name: "Bolt I", level: "beginner", description: "Have you been away from the starting line for a while?? Have you missed some ruuns? Do you miss running? Join our Bolt coaches for this light 30 minute run that will inspire you to get back to starting and finishing runs again.")
 runclass2 = RunClass.create(name: "Bolt II", level: "intermediate", description: "One hour. 60 minutes. Just you and the treadmill. Well, actually, it's you and the treadmill and one of our amazing Bolt coaches. Get ready to roll through an excellent run. We'l make sure the hour on the treadmill is an hour well spent. This intermeditate recovery run proves that the treadmill does not need to be a dreadmill.")
